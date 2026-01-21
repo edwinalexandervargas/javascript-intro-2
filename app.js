@@ -132,6 +132,7 @@ for (let i = 0; i < grades.length; ++i) {
 console.log(goodGrades)
 
 
+
 // let grades = ['FAIL', 'FAIL', 'B']
 
 // let goodGrades = grades.filter(element => element === 'B')
