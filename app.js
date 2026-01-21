@@ -75,3 +75,64 @@
 // }
 
 // console.log(convertCelsiusToFahreheit(0))
+
+// --------
+
+// let arr = [20, 30, 40, 50, 100]
+
+// first element of array:
+// console.log(arr[0])
+
+// last Element of array:
+// console.log(arr[arr.length - 1])
+
+// add element onto end of array:
+// arr.push(200)
+
+// filter elements of an array long version:
+// let newArr = arr.filter((element) => {
+//     console.log(element)
+//     if (element <50) {
+//         return true
+//     }
+// })
+
+// console.log(newArr);
+
+// optimize version
+
+// let newArr = arr.filter(element => element < 50)
+
+
+// console.log(newArr);
+
+
+
+// Filter out all the 'FAIL' elements in an array 
+// ex: ['A+', 'A', 'FAIL'] => ['A+', 'A']
+//     ['FAIL', 'FAIL', 'B'] => ['B']
+//     ['FAIL'] => []
+
+
+// let grades = ['A+', 'A', 'FAIL']
+
+// let goodGrades = grades.filter(element => element !== 'FAIL')
+// console.log(goodGrades)
+
+
+let grades = ['A+', 'A', 'FAIL']
+
+let goodGrades = []
+for (let i = 0; i < grades.length; ++i) {
+    if (grades[i] !== 'FAIL') {
+        goodGrades.push(grades[i]);
+    }
+}
+
+console.log(goodGrades)
+
+
+// let grades = ['FAIL', 'FAIL', 'B']
+
+// let goodGrades = grades.filter(element => element === 'B')
+// console.log(goodGrades)
