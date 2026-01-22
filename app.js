@@ -163,7 +163,6 @@
 
 
 
-
 // let dollars = [1, 5, 10, 3]
 // let cents = [];
 
@@ -172,3 +171,49 @@
 // }
     
 // console.log(cents);
+
+
+
+// objects
+
+let users = [
+    {
+        username: 'Edwin',
+        email: 'edwinalexandervargas01@gmail.com',
+        password: 'test123',
+        subscriptionStatus: 'VIP',
+        discordId: 'Edwin Vargas#0001'
+    },
+    {
+        username: 'Kevin',
+        email: 'dior@gmail.com',
+        password: 'dior123',
+        subscriptionStatus: 'VIP',
+        discordId: 'k.dior#0001'
+    },
+    {
+        username: 'Adrian',
+        email: 'Adrian@gmail.com',
+        password: 'CanesLover123',
+        subscriptionStatus: 'VIP',
+        discordId: 'nsbadrian#0001'
+    },
+];
+
+function login(email, password) {
+    for (let i = 0; i <users.length; ++i) {
+        if (users[i].email === email) {
+            console.log(users[i]);
+            if (users[i].password === password) {
+                console.log('log the user in - the details are correct')
+            }
+            else {
+                console.log('password is incorrect - try again')
+            }
+            return;
+        }
+    }
+    console.log('could not find an email that matches')
+}
+
+login('edwinalexandervargas01@gmail.com', 'test123')
