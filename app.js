@@ -120,20 +120,55 @@
 // console.log(goodGrades)
 
 
-let grades = ['A+', 'A', 'FAIL']
-
-let goodGrades = []
-for (let i = 0; i < grades.length; ++i) {
-    if (grades[i] !== 'FAIL') {
-        goodGrades.push(grades[i]);
-    }
-}
-
-console.log(goodGrades)
-
-
-
 // let grades = ['FAIL', 'FAIL', 'B']
 
 // let goodGrades = grades.filter(element => element === 'B')
 // console.log(goodGrades)
+
+
+
+
+// let grades = ['A+', 'A', 'FAIL']
+
+// let goodGrades = []
+// for (let i = 0; i < grades.length; ++i) {
+//     if (grades[i] !== 'FAIL') {
+//         goodGrades.push(grades[i]);
+//     }
+// }
+
+// console.log(goodGrades)
+
+
+// map method
+
+// let arr = [1, 4, 9, 16]
+
+// let newArray = arr.map((element) => 'dog')
+
+// console.log(newArray);
+
+
+
+// turn each element in an array of dollars into cents 
+// [1, 5, 10, 3] => [100, 500, 1000, 300]
+// [0, 10, 20] => [0, 1000, 2000]
+
+
+
+// let dollars = [1, 5, 10, 3]
+// let cents = dollars.map(element => element * 100)
+
+// console.log(cents)
+
+
+
+
+// let dollars = [1, 5, 10, 3]
+// let cents = [];
+
+// for (let i = 0; i < dollars.length; ++i) {
+//     cents.push(dollars[i] * 100)
+// }
+    
+// console.log(cents);
